@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { fakeData } from 'src/app/data';
 
 @Component({
   selector: 'app-home',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  contents:any
+
+  constructor() { 
+    this.contents = fakeData
+  }
 
   ngOnInit(): void {
   }
